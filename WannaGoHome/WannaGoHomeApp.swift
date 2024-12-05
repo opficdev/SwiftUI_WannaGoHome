@@ -7,16 +7,17 @@
 
 import SwiftUI
 
+
 @main
+
 struct WannaGoHomeApp: App {
-    @StateObject private var ContentVM = ContentViewModel()
+    @UIApplicationDelegateAdaptor var appDelegate: AppDelegate
     init() {
         UIView.appearance().overrideUserInterfaceStyle = .light
     }
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(ContentVM)
         }
     }
 }
