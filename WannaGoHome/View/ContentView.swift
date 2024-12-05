@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var ContentVM: ContentViewModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView(selection: $ContentVM.selectedTab) {
+            DDayView()
+                .tabItem {
+                    Label("디데이", systemImage: "calendar.day.timeline.right")
+                }
+                .tag("DDayView")
         }
-        .padding()
     }
 }
 
