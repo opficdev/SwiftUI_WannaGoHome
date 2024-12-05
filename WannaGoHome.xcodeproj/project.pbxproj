@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DF418C752D019D4E00DE19F9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DF418C742D019D4E00DE19F9 /* README.md */; };
+		DF418C9B2D01A47A00DE19F9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DF418C9A2D01A47A00DE19F9 /* RxCocoa */; };
+		DF418C9D2D01A47A00DE19F9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DF418C9C2D01A47A00DE19F9 /* RxSwift */; };
+		DF418CA02D01A48800DE19F9 /* ShowTime in Frameworks */ = {isa = PBXBuildFile; productRef = DF418C9F2D01A48800DE19F9 /* ShowTime */; };
+		DF418CA32D01A4C500DE19F9 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DF418CA22D01A4C500DE19F9 /* KakaoSDKAuth */; };
+		DF418CA52D01A4C500DE19F9 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = DF418CA42D01A4C500DE19F9 /* KakaoSDKCommon */; };
+		DF418CA72D01A4C500DE19F9 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = DF418CA62D01A4C500DE19F9 /* KakaoSDKUser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -15,9 +21,22 @@
 		DF418C742D019D4E00DE19F9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DF418CC22D01A84200DE19F9 /* Exceptions for "WannaGoHome" folder in "WannaGoHome" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DF09258E2D019AB600168558 /* WannaGoHome */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DF0925912D019AB600168558 /* WannaGoHome */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DF418CC22D01A84200DE19F9 /* Exceptions for "WannaGoHome" folder in "WannaGoHome" target */,
+			);
 			path = WannaGoHome;
 			sourceTree = "<group>";
 		};
@@ -28,6 +47,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF418C9D2D01A47A00DE19F9 /* RxSwift in Frameworks */,
+				DF418CA02D01A48800DE19F9 /* ShowTime in Frameworks */,
+				DF418CA72D01A4C500DE19F9 /* KakaoSDKUser in Frameworks */,
+				DF418C9B2D01A47A00DE19F9 /* RxCocoa in Frameworks */,
+				DF418CA52D01A4C500DE19F9 /* KakaoSDKCommon in Frameworks */,
+				DF418CA32D01A4C500DE19F9 /* KakaoSDKAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +96,12 @@
 			);
 			name = WannaGoHome;
 			packageProductDependencies = (
+				DF418C9A2D01A47A00DE19F9 /* RxCocoa */,
+				DF418C9C2D01A47A00DE19F9 /* RxSwift */,
+				DF418C9F2D01A48800DE19F9 /* ShowTime */,
+				DF418CA22D01A4C500DE19F9 /* KakaoSDKAuth */,
+				DF418CA42D01A4C500DE19F9 /* KakaoSDKCommon */,
+				DF418CA62D01A4C500DE19F9 /* KakaoSDKUser */,
 			);
 			productName = WannaGoHome;
 			productReference = DF09258F2D019AB600168558 /* WannaGoHome.app */;
@@ -92,14 +123,18 @@
 				};
 			};
 			buildConfigurationList = DF09258A2D019AB600168558 /* Build configuration list for PBXProject "WannaGoHome" */;
-			developmentRegion = en;
+			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
-				Base,
+				ko,
 			);
 			mainGroup = DF0925862D019AB600168558;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DF418C992D01A47A00DE19F9 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				DF418C9E2D01A48800DE19F9 /* XCRemoteSwiftPackageReference "ShowTime" */,
+				DF418CA12D01A4C500DE19F9 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DF0925902D019AB600168558 /* Products */;
 			projectDirPath = "";
@@ -262,6 +297,7 @@
 				DEVELOPMENT_TEAM = 4CPC6N38WA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WannaGoHome/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "집가고싶다";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -299,6 +335,7 @@
 				DEVELOPMENT_TEAM = 4CPC6N38WA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WannaGoHome/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "집가고싶다";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -347,6 +384,66 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DF418C992D01A47A00DE19F9 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.8.0;
+			};
+		};
+		DF418C9E2D01A48800DE19F9 /* XCRemoteSwiftPackageReference "ShowTime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KaneCheshire/ShowTime";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.3;
+			};
+		};
+		DF418CA12D01A4C500DE19F9 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.23.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF418C9A2D01A47A00DE19F9 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF418C992D01A47A00DE19F9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		DF418C9C2D01A47A00DE19F9 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF418C992D01A47A00DE19F9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		DF418C9F2D01A48800DE19F9 /* ShowTime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF418C9E2D01A48800DE19F9 /* XCRemoteSwiftPackageReference "ShowTime" */;
+			productName = ShowTime;
+		};
+		DF418CA22D01A4C500DE19F9 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF418CA12D01A4C500DE19F9 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		DF418CA42D01A4C500DE19F9 /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF418CA12D01A4C500DE19F9 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
+		DF418CA62D01A4C500DE19F9 /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF418CA12D01A4C500DE19F9 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DF0925872D019AB600168558 /* Project object */;
 }
