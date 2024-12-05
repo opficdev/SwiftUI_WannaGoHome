@@ -25,6 +25,7 @@
 		DF418CC22D01A84200DE19F9 /* Exceptions for "WannaGoHome" folder in "WannaGoHome" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				AppConfig.xcconfig,
 				Info.plist,
 			);
 			target = DF09258E2D019AB600168558 /* WannaGoHome */;
